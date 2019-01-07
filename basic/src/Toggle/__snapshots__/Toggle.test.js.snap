@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle renders toggle correctly 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Show/Hide
+  </button>
+</div>
+`;
