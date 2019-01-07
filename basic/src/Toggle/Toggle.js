@@ -10,11 +10,10 @@ export default class Toggle extends Component {
     });
   };
   render() {
-    return (
-      <div>
-        {this.state.on && <h1>G-wagon, G-wagon, G-wagon, G-wagon,G-wagon</h1>}
-        <button onClick={this.toggle}>Show/Hide</button>
-      </div>
-    );
+    const { children } = this.props;
+    return children({
+      on: this.state.on,
+      toggle: this.toggle
+    });
   }
 }
